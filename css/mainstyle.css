@@ -1,0 +1,67 @@
+
+body {
+    background-color: white;
+    font-family: sans-serif;
+}
+
+h1 {
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+.main-title {
+   
+    
+}
+
+header {
+    display: table;
+    width: 80%;
+    margin-bottom: 50px;
+    border-bottom: solid black;
+    color: red;
+    text-align: left;
+}
+
+header figure {
+    width: 60px;
+    border: solid black;
+    display: table-cell;
+    
+}
+
+header h1 {
+    border: solid black;
+    display: table-cell;
+    
+
+}
+
+article {
+    margin-left: 20px;
+}
+
+footer {
+    margin-top: 50px;
+    border-top: solid black; 
+    width: 80%;
+}
+
+footer   {
+    background-color: cyan;
+    text-align: center
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 10px;
+    
+    
+}
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+
+
