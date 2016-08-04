@@ -37,31 +37,18 @@
             </header>
             <div class="panel panel-primary" id="mainpainel">
                 
-               
-
-
-
 
             <div class="panel panel-default" >
                 <div class="panel-body">
                     <article>
-                        <h3>Formação Acadêmica</h3>
-                        <ul>
-                            <li>FIAP - MBA Desv. Java</li>
-                            <li>FEI - Engenharia elétrica</li>
-                        </ul>
-                    </article>
-
-
-                    <article>
-                        <h3>Histórico Profissional</h3>
-
-                        <ul>
-                            <li>Desenvolvedor de Software - Smartstaff</li>
-                            <li>Engenheiro do Produto - Volkswagen</li>
-                            <li>Engenheiro de testes - Mercedes-Benz</li>
-                            <li>Técnico Telecomunicações - Alcatel-Lucent</li>
-                        </ul>	
+                     
+                        <label>Digite Texto:</label>
+                        <input type="text" id="entrada">
+                        <button id="submeter">Submit</button>
+                        <button id="limpar">Limpar</button>
+                        
+                        <div id="showtext"></div>
+                        
                     </article>
                 </div>
             <div class="panel-footer">
@@ -77,12 +64,8 @@
             </nav>
             </footer>
 
-
-
-
             </div>
             </div>
-
 
 
             </div>
@@ -92,8 +75,43 @@
 
 
             </body>
-            <script src="https://code.jquery.com/jquery-3.1.0.min.js"/>
-            <script src="js/bootstrap.min.js"/>
+  
+                
+            <script src="js/jquery-3.1.0.min.js"></script>
+                <script src="js/bootstrap.min.js"></script>
+                
+                <script>
+                    
+                    $(document).ready(function(){
+                        
+                        $('#submeter').click(function(){
+                            var desc = $('#entrada').val();
+                    
+                                $('#showtext').append('<p> - ' + desc + '</p>');
+                            
+                            console.log($('#showtext').html());
+                            
+                            // localStorage.setItem("lista","teste" );
+                        
+                        });
+                        
+                        
+                        $('#limpar').click(function(){
+                            
+                            
+                            $('#showtext').html(null);
+                            
+                            
+                        });
+                        
+                    });
+                    
+                    
+                    
+                    
+                    
+                </script>
+                
 
 
             </html>
