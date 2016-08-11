@@ -1,0 +1,91 @@
+
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;    
+}
+
+body {
+    text-align: center;
+}
+
+#listar:active  + .mural {
+    flex-direction: column;   
+}
+
+.mural {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    
+}
+
+section {  
+    border: solid black 1px;
+    padding: 0;
+    margin: 0 10%;
+    margin-top: 5%;
+    background: cyan;
+}
+
+header {
+    font-size: 1.6em;
+    height: 30px;
+    background-color: lightblue;
+    text-align: center;
+    border-bottom: solid black 1px;
+    margin-bottom: 10px;
+}
+
+
+@media (min-width: 560px) {
+    .cartao {
+        width: 190px;
+        display: inline-block;
+    }
+    
+}
+
+
+.cabecalho {
+    background: blue;
+    padding: 16px;  
+}
+
+.card {
+    
+    box-sizing: border-box;
+    flex-basis: 190px;
+    flex-grow: 1;
+    border-bottom: solid black 2px;
+    border-right: solid black 2px;
+    
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+    background: yellow;
+    width: 200px;
+    height: 120px;
+
+    
+}
+
+
+
+
+.input-field {
+    width: 80%;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+}
+.input-field textarea{
+    width: 100%;
+}
+
+.input-field input{
+    width: 100%;
+}
+
+

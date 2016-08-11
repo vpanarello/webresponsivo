@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width">
+        <meta charset="UTF-8">
+        <title class="cabecalho">Título da Página</title>
+        <link rel="stylesheet" href="css/estilos.css">
+    </head>
+    <body>
+        <header>
+            <h5>Notas</h5>
+        </header>
+        
+        
+        <div class="input-field">
+                    
+            <form class="novaNota container" action="#" id="insereNota">
+                <textarea class="novaNota-conteudo" name="novaNota-conteudo" placeholder="Digite aqui"></textarea>
+                <input class="novaNota-Salvar" type="submit" value="Add">
+            </form>
+        </div>
+        
+        
+
+        <section class="mural">
+
+                <div class="card" style="display: none;">
+                    <p>Cartão Hidden</p>
+                </div>
+
+
+            <footer></footer>
+        </section>
+        
+        <script src="https://code.jquery.com/jquery-3.1.0.js" integrity="sha256-slogkvB1K3VOkzAI8QITxV3VzpOnkeNVsKvtkYLMjfk=" crossorigin="anonymous"></script>
+        
+        <script>
+            
+            $(document).ready(function(){
+                
+                var form = $("#insereNota");
+                
+                form.on("submit", function(event) {
+                    $("<div>", {"class":"card"})
+                        .text($(".novaNota-conteudo").val()).appendTo($(".mural"));
+                    event.preventDefault();
+                });
+            });
+            
+            
+            
+            
+            function inserirElemento() {
+               console.log("TESTE");
+            }
+        </script>
+        
+        
+    </body>
+</html>
+
+
+
